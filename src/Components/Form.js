@@ -13,8 +13,9 @@ const Form = (props) =>{
     }
 
     return (
+        
         <form onSubmit={handleSubmit}>
-            <label>Name
+            <label>Name:
             <input
                 placeholder="name"
                 value={props.values.name}
@@ -22,7 +23,7 @@ const Form = (props) =>{
                 onChange={handleChange}
                 />
             </label>
-            <label>Email
+            <label><br/>Email:
                 <input
                 placeholder="Enter your email:"
                 value={props.values.email}
@@ -30,13 +31,13 @@ const Form = (props) =>{
                 onChange={handleChange}
                 />
             </label>
-            <label>Role
+            <label><br/>Role: 
                 <input
                 placeholder="Enter your role:"
                 value={props.values.role}
                 name="role"
                 onChange={handleChange}
-                />
+                /><br/>
             </label>
             <input type="submit" value="Add team to data"/>
         </form>

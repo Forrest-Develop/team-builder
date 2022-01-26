@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <h1>Team Builder App</h1>
+      <div className='Container'>
       <Form
         values={values}
         change={onChange}
@@ -31,6 +32,7 @@ function App() {
             </div>
         )
       })}
+      </div>
     </div>
   );
 }
